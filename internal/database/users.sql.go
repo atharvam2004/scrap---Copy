@@ -41,7 +41,7 @@ func (q *Queries) CreateUser(ctx context.Context, arg CreateUserParams) (User, e
 		&i.CreatedAt,
 		&i.UpdatedAt,
 		&i.Name,
-		&i.APIKey,
+		&i.ApiKey,
 	)
 	return i, err
 }
@@ -58,7 +58,7 @@ func (q *Queries) GetUserByAPIKey(ctx context.Context, apiKey string) (User, err
 		&i.CreatedAt,
 		&i.UpdatedAt,
 		&i.Name,
-		&i.APIKey,
+		&i.ApiKey,
 	)
 	return i, err
 }
